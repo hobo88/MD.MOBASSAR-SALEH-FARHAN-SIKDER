@@ -1,0 +1,527 @@
+@import "utilities.css";
+:root {
+  --primary: #ff5733;
+  --dark: #161616;
+  --lighter: #323232;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #161616;
+  --secondary: #07606;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.WebContainer {
+  width: 100%;
+  height: auto;
+}
+.articles {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+header {
+  background: var(--dark);
+  height: 600px;
+  padding-top: 10rem;
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+header nav .left a:hover {
+  color: var(--primary);
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+header nav {
+  padding: 2rem 0;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+.Picture {
+  padding: 0;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+.Picture .text {
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+.Picture .text h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  padding-left: 21.7rem;
+  transform: translateY(100px);
+  animation: slideUp 2s ease forwards 0.5s;
+}
+
+.Picture .text h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  padding-left: 19.7rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(100px);
+  animation: slideUp 7s ease forwards 0.5s;
+}
+
+.Picture .text h1 span {
+  color: var(--primary);
+  padding-left: 7.5rem;
+  transform: translateY(100px);
+  animation: slideUp 9s ease forwards 0.5s;
+}
+
+.Picture .text p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+.Picture .text {
+  margin-top: -4rem;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+section {
+  padding: 6rem 0;
+  background: var(--light);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About .About-img {
+  height: 20rem;
+  width: 20rem;
+  padding-left: 26rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--ternary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h2 span {
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--ternary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h3 span {
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--ternary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.About h4 span {
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+.section-heading span {
+  color: var(--primary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 8rem;
+  text-align: center;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments {
+  background: var(--light);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 6rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card {
+  background: var(--lighter);
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  padding-top: 5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: auto;
+  height: auto;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card .caps {
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 301px;
+  height: 294px;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card .Digital-tuli {
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 301px;
+  height: 294px;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card .FB {
+  background: var(--pure);
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 150px;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card .INSTA {
+  background: var(--pure);
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 150px;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Establishments .card-wrapper .card p {
+  font-family: "Lato", sans-serif;
+  color: var(--ternary);
+  line-height: 1.6;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+section.Appointment {
+  text-align: center;
+  background: var(--dark);
+  color: var(--pure);
+  padding-bottom: 14rem;
+  padding-top: 15rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Appointment h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Appointment p {
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+section.Positions {
+  background: var(--light);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card h1 {
+  color: var(--pure);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card {
+  background: var(--lighter);
+  padding: 2rem 2rem;
+  position: relative;
+  padding-top: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card img {
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  padding-top: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 10rem;
+  height: 10rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card p {
+  font-family: "Lato", sans-serif;
+  color: var(--primary);
+  line-height: 1.6;
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card:hover {
+  background: var(--ternary);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+section.Positions .card-wrapper .card:hover h2,
+section.Positions .card-wrapper .card:hover p {
+  color: var(--light);
+  transform: translateY(100px);
+  animation: slideUp 8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+footer {
+  background: var(--pure);
+  height: 100px;
+}
+
+footer .container h5 {
+  color: var(--light);
+  text-align: center;
+  font-size: small;
+}
