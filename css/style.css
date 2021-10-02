@@ -68,27 +68,38 @@ header nav {
   font-size: 1.6rem;
   color: var(--primary);
   margin-bottom: 0.5rem;
-  padding-left: 21.7rem;
   transform: translateY(100px);
   animation: slideUp 2s ease forwards 0.5s;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Picture .text h1 {
   font-size: 4rem;
   font-weight: 100;
   line-height: 1.2;
-  margin-bottom: 2rem;
-  padding-left: 19.7rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
   transform: translateY(100px);
   animation: slideUp 7s ease forwards 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Picture .text h1 span {
   color: var(--primary);
-  padding-left: 7.5rem;
   transform: translateY(100px);
   animation: slideUp 9s ease forwards 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
 }
 
 .Picture .text p {
@@ -96,12 +107,18 @@ header nav {
   margin-bottom: 2rem;
   transform: translateY(100px);
   animation: slideUp 0.8s ease forwards 0.5s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Picture .text {
   margin-top: -4rem;
   transform: translateY(100px);
   animation: slideUp 0.8s ease forwards 0.5s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes slideIn {
@@ -139,11 +156,17 @@ section {
 }
 
 section.About .About-img {
-  height: 20rem;
-  width: 20rem;
-  padding-left: 26rem;
+  position: relative;
+  text-align: center;
+  width: 301px;
+  height: 294px;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
   transform: translateY(100px);
   animation: slideUp 8s ease forwards 0.5s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section.About h1 {
@@ -429,7 +452,7 @@ section.Positions .card-wrapper .card h1 {
 
 section.Positions .card-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 3rem;
   transform: translateY(100px);
@@ -440,7 +463,6 @@ section.Positions .card-wrapper .card {
   background: var(--lighter);
   padding: 2rem 2rem;
   position: relative;
-  padding-top: 2rem;
   text-align: center;
   transition: all 0.3s ease;
   transform: translateY(100px);
