@@ -23,8 +23,8 @@ body {
 header {
   background: var(--dark);
   height: 600px;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 .container {
@@ -69,10 +69,24 @@ header nav {
 .Picture .text h6 {
   font-size: 1.6rem;
   color: var(--primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   transform: translateY(100px);
   animation: slideUp 2s ease forwards 0.5s;
   text-align: center;
+}
+
+.Picture .text img {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -193,16 +207,6 @@ header nav {
   100% {
     opacity: 1;
   }
-}
-
-.Picture .text img {
-  width: 500px;
-  height: 350px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
 }
 
 section {
