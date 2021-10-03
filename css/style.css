@@ -24,6 +24,7 @@ header {
   background: var(--dark);
   height: 600px;
   padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 
 .container {
@@ -49,7 +50,7 @@ header nav .left a:hover {
 }
 
 header nav {
-  padding: 2rem 0;
+  padding: 0;
   transform: translateY(100px);
   animation: slideUp 0.8s ease forwards 0.5s;
 }
@@ -147,6 +148,61 @@ header nav {
   100% {
     transform: translateX(0px);
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Picture .text img {
+  width: 500px;
+  height: 350px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
 
 section {
