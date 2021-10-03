@@ -631,6 +631,26 @@ section.Positions .card-wrapper .card:hover p {
   }
 }
 
+section .CV {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--pure);
+  text-align: center;
+}
+
+section .CV h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--pure);
+  text-align: center;
+}
+
+section .CV h1 span {
+  margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  color: var(--primary);
+}
+
 footer {
   background: var(--pure);
   height: 100px;
