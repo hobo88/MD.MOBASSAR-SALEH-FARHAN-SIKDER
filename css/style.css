@@ -1,782 +1,3926 @@
 @import "utilities.css";
-:root {
-  --primary: #ff5733;
-  --dark: #161616;
-  --lighter: #323232;
-  --pure: #ffffff;
-  --ternary: #898989;
-  --light: #161616;
-  --secondary: #07606;
-}
-body {
-  font-family: "poppins", sans-serif;
-}
-.WebContainer {
-  width: 100%;
-  height: auto;
-}
-.articles {
-  width: 90%;
-  height: auto;
-  margin: auto;
-}
-header {
-  background: var(--dark);
-  height: 600px;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 
-.container {
-  max-width: 1152px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-header nav .left a {
-  color: var(--pure);
-  text-decoration: none;
-  margin-right: 1rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-header nav .left a:hover {
-  color: var(--primary);
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-header nav {
-  padding: 0;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-.Picture {
-  padding: 0;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-.Picture .text {
-  color: var(--pure);
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-.Picture .text h6 {
-  font-size: 1.6rem;
-  color: var(--primary);
-  margin-bottom: 2rem;
-  transform: translateY(100px);
-  animation: slideUp 2s ease forwards 0.5s;
-  text-align: center;
-}
-
-.Picture .text img {
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-  position: relative;
-  text-align: center;
-  width: 200px;
-  height: 250px;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Picture .text h1 {
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 1.2;
-  margin-bottom: 2.5rem;
-  transform: translateY(100px);
-  animation: slideUp 7s ease forwards 0.5s;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Picture .text h1 span {
-  color: var(--primary);
-  transform: translateY(100px);
-  animation: slideUp 9s ease forwards 0.5s;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Picture .text p {
-  line-height: 1.9;
-  margin-bottom: 2rem;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.Picture .text {
-  margin-top: -4rem;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --primary: #ff5733;
+    --dark: #161616;
+    --lighter: #323232;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #161616;
+    --secondary: #07606;
   }
-  100% {
-    transform: translateX(0px) scale(1);
+  body {
+    font-family: "poppins", sans-serif;
+  }
+  .WebContainer {
+    width: 100%;
+    height: auto;
+  }
+  .articles {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  header {
+    background: var(--dark);
+    height: 600px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav .left a:hover {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture .text {
+    color: var(--pure);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+  .Picture .text h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 2s ease forwards 0.5s;
+    text-align: center;
+  }
+
+  .Picture .text img {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    transform: translateY(100px);
+    animation: slideUp 7s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 span {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 9s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text {
+    margin-top: -4rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  section {
+    padding: 6rem 0;
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.About .About-img {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding-left: 0.3rem;
+    padding-right: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.About h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+  }
+
+  section.About h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h2 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h3 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h4 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About h6 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 180px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card {
+    background: var(--lighter);
+    padding: 1rem 1rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 80px;
+    height: 80px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  section.About .card-wrapper .card h7 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color: var(--pure);
+  }
+
+  section.About .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover h7,
+  section.About .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+  }
+  .section-heading span {
+    color: var(--primary);
+  }
+  .section-heading + p {
+    color: var(--ternary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  section.Establishments {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Establishments .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 6rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card {
+    background: var(--lighter);
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .caps {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .Digital-tuli {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .FB {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .INSTA {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section.Appointment {
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    padding-bottom: 14rem;
+    padding-top: 15rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Appointment p {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  section.Positions {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Positions .card-wrapper .card h1 {
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card {
+    background: var(--lighter);
+    padding: 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 10rem;
+    height: 10rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover h2,
+  section.Positions .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section .CV {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 span {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+  }
+
+  footer {
+    background: var(--pure);
+    height: 100px;
+  }
+
+  footer .container h5 {
+    color: var(--light);
+    text-align: center;
+    font-size: small;
   }
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  :root {
+    --primary: #ff5733;
+    --dark: #161616;
+    --lighter: #323232;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #161616;
+    --secondary: #07606;
   }
-  100% {
-    transform: translateY(0px);
+  body {
+    font-family: "poppins", sans-serif;
+  }
+  .WebContainer {
+    width: 100%;
+    height: auto;
+  }
+  .articles {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  header {
+    background: var(--dark);
+    height: 600px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav .left a:hover {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture .text {
+    color: var(--pure);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+  .Picture .text h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 2s ease forwards 0.5s;
+    text-align: center;
+  }
+
+  .Picture .text img {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    transform: translateY(100px);
+    animation: slideUp 7s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 span {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 9s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text {
+    margin-top: -4rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  section {
+    padding: 6rem 0;
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.About .About-img {
+    position: relative;
+    text-align: center;
+    width: 301px;
+    height: 294px;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.About h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+  }
+
+  section.About h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h2 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h3 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h4 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About h6 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card {
+    background: var(--lighter);
+    padding: 1em 1rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 80px;
+    height: 80px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  section.About .card-wrapper .card h7 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color: var(--pure);
+  }
+
+  section.About .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover h7,
+  section.About .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+  }
+  .section-heading span {
+    color: var(--primary);
+  }
+  .section-heading + p {
+    color: var(--ternary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  section.Establishments {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Establishments .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 6rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card {
+    background: var(--lighter);
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .caps {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .Digital-tuli {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .FB {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .INSTA {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section.Appointment {
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    padding-bottom: 14rem;
+    padding-top: 15rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Appointment p {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  section.Positions {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Positions .card-wrapper .card h1 {
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card {
+    background: var(--lighter);
+    padding: 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 10rem;
+    height: 10rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover h2,
+  section.Positions .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section .CV {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 span {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+  }
+
+  footer {
+    background: var(--pure);
+    height: 100px;
+  }
+
+  footer .container h5 {
+    color: var(--light);
+    text-align: center;
+    font-size: small;
   }
 }
 
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --primary: #ff5733;
+    --dark: #161616;
+    --lighter: #323232;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #161616;
+    --secondary: #07606;
   }
-  100% {
-    transform: translateX(0px);
+  body {
+    font-family: "poppins", sans-serif;
+  }
+  .WebContainer {
+    width: 100%;
+    height: auto;
+  }
+  .articles {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  header {
+    background: var(--dark);
+    height: 600px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav .left a:hover {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture .text {
+    color: var(--pure);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+  .Picture .text h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 2s ease forwards 0.5s;
+    text-align: center;
+  }
+
+  .Picture .text img {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    transform: translateY(100px);
+    animation: slideUp 7s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 span {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 9s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text {
+    margin-top: -4rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  section {
+    padding: 6rem 0;
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.About .About-img {
+    position: relative;
+    text-align: center;
+    width: 301px;
+    height: 294px;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.About h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+  }
+
+  section.About h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h2 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h3 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h4 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About h6 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card {
+    background: var(--lighter);
+    padding: 1em 1rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 80px;
+    height: 80px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  section.About .card-wrapper .card h7 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color: var(--pure);
+  }
+
+  section.About .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover h7,
+  section.About .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+  }
+  .section-heading span {
+    color: var(--primary);
+  }
+  .section-heading + p {
+    color: var(--ternary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  section.Establishments {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Establishments .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 6rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card {
+    background: var(--lighter);
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .caps {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .Digital-tuli {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .FB {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .INSTA {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section.Appointment {
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    padding-bottom: 14rem;
+    padding-top: 15rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Appointment p {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  section.Positions {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Positions .card-wrapper .card h1 {
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card {
+    background: var(--lighter);
+    padding: 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 10rem;
+    height: 10rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover h2,
+  section.Positions .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section .CV {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 span {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+  }
+
+  footer {
+    background: var(--pure);
+    height: 100px;
+  }
+
+  footer .container h5 {
+    color: var(--light);
+    text-align: center;
+    font-size: small;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --primary: #ff5733;
+    --dark: #161616;
+    --lighter: #323232;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #161616;
+    --secondary: #07606;
   }
-  100% {
-    opacity: 1;
+  body {
+    font-family: "poppins", sans-serif;
+  }
+  .WebContainer {
+    width: 100%;
+    height: auto;
+  }
+  .articles {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  header {
+    background: var(--dark);
+    height: 600px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav .left a:hover {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  header nav {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  .Picture .text {
+    color: var(--pure);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+  .Picture .text h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 2s ease forwards 0.5s;
+    text-align: center;
+  }
+
+  .Picture .text img {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    transform: translateY(100px);
+    animation: slideUp 7s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text h1 span {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 9s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Picture .text {
+    margin-top: -4rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  section {
+    padding: 6rem 0;
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.About .About-img {
+    position: relative;
+    text-align: center;
+    width: 301px;
+    height: 294px;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.About h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+  }
+
+  section.About h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h2 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h3 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
+
+  section.About h4 span {
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section.About h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About h6 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card {
+    background: var(--lighter);
+    padding: 1rem 1rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 80px;
+    height: 80px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  section.About .card-wrapper .card h7 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color: var(--pure);
+  }
+
+  section.About .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover h7,
+  section.About .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+  }
+  .section-heading span {
+    color: var(--primary);
+  }
+  .section-heading + p {
+    color: var(--ternary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  section.Establishments {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Establishments .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 6rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card {
+    background: var(--lighter);
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .caps {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .Digital-tuli {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .FB {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .INSTA {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section.Appointment {
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    padding-bottom: 14rem;
+    padding-top: 15rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Appointment p {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  section.Positions {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Positions .card-wrapper .card h1 {
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card {
+    background: var(--lighter);
+    padding: 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 10rem;
+    height: 10rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover h2,
+  section.Positions .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section .CV {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 span {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+  }
+
+  footer {
+    background: var(--pure);
+    height: 100px;
+  }
+
+  footer .container h5 {
+    color: var(--light);
+    text-align: center;
+    font-size: small;
   }
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --primary: #ff5733;
+    --dark: #161616;
+    --lighter: #323232;
+    --pure: #ffffff;
+    --ternary: #898989;
+    --light: #161616;
+    --secondary: #07606;
   }
-  100% {
-    opacity: 1;
+  body {
+    font-family: "poppins", sans-serif;
   }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
+  .WebContainer {
+    width: 100%;
+    height: auto;
   }
-  100% {
-    opacity: 1;
+  .articles {
+    width: 90%;
+    height: auto;
+    margin: auto;
   }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
+  header {
+    background: var(--dark);
+    height: 600px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
-  100% {
-    opacity: 1;
+
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
-}
 
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
+  header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-  100% {
-    opacity: 1;
+
+  header nav .left a:hover {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-}
 
-section {
-  padding: 6rem 0;
-  background: var(--light);
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-section.About .About-img {
-  position: relative;
-  text-align: center;
-  width: 301px;
-  height: 294px;
-  padding-left: 1rem;
-  padding-right: 1.6rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section.About h1 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-align: center;
-  color: var(--primary);
-}
-
-section.About h2 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--ternary);
-  text-align: center;
-}
-
-section.About h2 span {
-  color: var(--pure);
-  text-align: center;
-}
-
-section.About h3 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--ternary);
-  text-align: center;
-}
-
-section.About h3 span {
-  color: var(--pure);
-  text-align: center;
-}
-
-section.About h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: var(--ternary);
-  text-align: center;
-}
-
-section.About h4 span {
-  color: var(--pure);
-  text-align: center;
-}
-
-section.About h5 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--primary);
-  text-align: center;
-}
-
-section.About .block {
-  width: 330px;
-  height: 10px;
-  display: block;
-  overflow: hidden;
-  background-color: #ff5733;
-  margin: 0 auto;
-}
-
-section.About h6 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--primary);
-  text-align: center;
-}
-
-section.About .block {
-  width: 330px;
-  height: 10px;
-  display: block;
-  overflow: hidden;
-  background-color: #ff5733;
-  margin: 0 auto;
-}
-
-section.About .card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  margin: 0 auto;
-  overflow: hidden;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.About .card-wrapper .card {
-  background: var(--lighter);
-  padding: 1em 1rem;
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.About .card-wrapper .card img {
-  padding: 0.5rem 0.5rem;
-  position: relative;
-  padding-top: 0.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 80px;
-  height: 80px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-section.About .card-wrapper .card h7 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-  color: var(--pure);
-}
-
-section.About .card-wrapper .card p {
-  font-family: "Lato", sans-serif;
-  color: var(--primary);
-  line-height: 1.6;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.About .card-wrapper .card:hover {
-  background: var(--ternary);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.About .card-wrapper .card:hover h7,
-section.About .card-wrapper .card:hover p {
-  color: var(--light);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
+  header nav {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-  100% {
-    transform: translateX(0px) scale(1);
+
+  .Picture {
+    padding: 0;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-}
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
+  .Picture .text {
+    color: var(--pure);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-  100% {
-    transform: translateY(0px);
+  .Picture .text h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 2s ease forwards 0.5s;
+    text-align: center;
   }
-}
 
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
+  .Picture .text img {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  100% {
-    transform: translateX(0px);
+
+  .Picture .text h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    transform: translateY(100px);
+    animation: slideUp 7s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-.section-heading {
-  color: var(--secondary);
-  text-align: center;
-  margin-bottom: 1rem;
-  line-height: 0.5;
-}
-.section-heading span {
-  color: var(--primary);
-}
-.section-heading + p {
-  color: var(--ternary);
-  font-family: "Lato", sans-serif;
-  margin-bottom: 8rem;
-  text-align: center;
-}
-
-section.Establishments {
-  background: var(--light);
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-section.Establishments .card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 6rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card {
-  background: var(--lighter);
-  padding: 0.5rem 0.5rem;
-  position: relative;
-  padding-top: 5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: auto;
-  height: auto;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card .caps {
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 301px;
-  height: 294px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card .Digital-tuli {
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 301px;
-  height: 294px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card .FB {
-  background: var(--pure);
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 150px;
-  height: 150px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card .INSTA {
-  background: var(--pure);
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 150px;
-  height: 150px;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card h2 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: var(--pure);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Establishments .card-wrapper .card p {
-  font-family: "Lato", sans-serif;
-  color: var(--ternary);
-  line-height: 1.6;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
+  .Picture .text h1 span {
+    color: var(--primary);
+    transform: translateY(100px);
+    animation: slideUp 9s ease forwards 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  100% {
-    transform: translateX(0px) scale(1);
+
+  .Picture .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
+  .Picture .text {
+    margin-top: -4rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  100% {
-    transform: translateY(0px);
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
   }
-}
 
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
-  100% {
-    transform: translateX(0px);
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
   }
-}
 
-section.Appointment {
-  text-align: center;
-  background: var(--dark);
-  color: var(--pure);
-  padding-bottom: 14rem;
-  padding-top: 15rem;
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
-
-section.Appointment h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Appointment p {
-  margin-bottom: 2rem;
-  font-family: "Lato", sans-serif;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateX(0px) scale(1);
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateY(0px);
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
 
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateX(0px);
+
+  section {
+    padding: 6rem 0;
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
   }
-}
-section.Positions {
-  background: var(--light);
-  transform: translateY(100px);
-  animation: slideUp 0.8s ease forwards 0.5s;
-}
 
-section.Positions .card-wrapper .card h1 {
-  color: var(--pure);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 3rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card {
-  background: var(--lighter);
-  padding: 2rem 2rem;
-  position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card img {
-  padding: 0.5rem 0.5rem;
-  position: relative;
-  padding-top: 0.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  width: 10rem;
-  height: 10rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card h2 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card p {
-  font-family: "Lato", sans-serif;
-  color: var(--primary);
-  line-height: 1.6;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card:hover {
-  background: var(--ternary);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-section.Positions .card-wrapper .card:hover h2,
-section.Positions .card-wrapper .card:hover p {
-  color: var(--light);
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(500px) scale(0.2);
+  section.About .About-img {
+    position: relative;
+    text-align: center;
+    width: 301px;
+    height: 294px;
+    padding-left: 1rem;
+    padding-right: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  100% {
-    transform: translateX(0px) scale(1);
+
+  section.About h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
   }
-}
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(300px);
+  section.About h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
   }
-  100% {
-    transform: translateY(0px);
+
+  section.About h2 span {
+    color: var(--pure);
+    text-align: center;
   }
-}
 
-@keyframes expand {
-  0% {
-    transform: translateX(1400px);
+  section.About h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
   }
-  100% {
-    transform: translateX(0px);
+
+  section.About h3 span {
+    color: var(--pure);
+    text-align: center;
   }
-}
 
-section .CV {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--pure);
-  text-align: center;
-}
+  section.About h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    text-align: center;
+  }
 
-section .CV h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--pure);
-  text-align: center;
-}
+  section.About h4 span {
+    color: var(--pure);
+    text-align: center;
+  }
 
-section .CV h1 span {
-  margin-bottom: 2rem;
-  font-family: "Lato", sans-serif;
-  color: var(--primary);
-}
+  section.About h5 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
 
-footer {
-  background: var(--pure);
-  height: 100px;
-}
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
 
-footer .container h5 {
-  color: var(--light);
-  text-align: center;
-  font-size: small;
+  section.About h6 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+    text-align: center;
+  }
+
+  section.About .block {
+    width: 330px;
+    height: 10px;
+    display: block;
+    overflow: hidden;
+    background-color: #ff5733;
+    margin: 0 auto;
+  }
+
+  section.About .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card {
+    background: var(--lighter);
+    padding: 1em 1rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 80px;
+    height: 80px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  section.About .card-wrapper .card h7 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    color: var(--pure);
+  }
+
+  section.About .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.About .card-wrapper .card:hover h7,
+  section.About .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+  }
+  .section-heading span {
+    color: var(--primary);
+  }
+  .section-heading + p {
+    color: var(--ternary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  section.Establishments {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Establishments .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 6rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card {
+    background: var(--lighter);
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .caps {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .Digital-tuli {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 301px;
+    height: 294px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .FB {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card .INSTA {
+    background: var(--pure);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Establishments .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section.Appointment {
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    padding-bottom: 14rem;
+    padding-top: 15rem;
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Appointment p {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  section.Positions {
+    background: var(--light);
+    transform: translateY(100px);
+    animation: slideUp 0.8s ease forwards 0.5s;
+  }
+
+  section.Positions .card-wrapper .card h1 {
+    color: var(--pure);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card {
+    background: var(--lighter);
+    padding: 2rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card img {
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    padding-top: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 10rem;
+    height: 10rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+    line-height: 1.6;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover {
+    background: var(--ternary);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  section.Positions .card-wrapper .card:hover h2,
+  section.Positions .card-wrapper .card:hover p {
+    color: var(--light);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(0.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  section .CV {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--pure);
+    text-align: center;
+  }
+
+  section .CV h1 span {
+    margin-bottom: 2rem;
+    font-family: "Lato", sans-serif;
+    color: var(--primary);
+  }
+
+  footer {
+    background: var(--pure);
+    height: 100px;
+  }
+
+  footer .container h5 {
+    color: var(--light);
+    text-align: center;
+    font-size: small;
+  }
 }
